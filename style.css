@@ -1,0 +1,157 @@
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#name-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+#enter-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+#enter-btn:hover {
+    background-color: #03b760;
+}
+#welcome-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    display: none;
+}
+#shopping-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: none;
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease,border-color 0.3s ease;
+}
+.list-item.comprado {
+    background-color: #e6ffe6;
+    border-color: #aaffaa;
+}
+.list-item.comprado .item-name {
+    text-decoration: line-through;
+    color: #888;
+}
+.item-name {
+    flex-grow: 1;
+    font-size: 1.1em;
+    color: #444;
+}
+.item-checkbox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50;
+}
+.remove-item {
+    background-color: #e05252;
+    color :white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.remove-item:hover {
+    background-color: #e05252;
+}
+.add-item-section {
+    display: flex;
+    margin-bottom: 20px;
+    display: none;
+}
+#new-item-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+#add-item-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+#add-item-btn:hover {
+    background-color: #45a049;
+}
+#item-count {
+    text-align: right;
+    font-size: 1.1em;
+    color:#555;
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    display: none;
+}
+.drag-handle {
+    cursor: grab;
+    font-size: 1.2em;
+    color:#aaa;
+    margin-left: 10px;
+    padding: 0 5px;
+}
+.list-item.dragging {
+    opacity: 0.5;
+    background-color: #4CAF50;
+}
